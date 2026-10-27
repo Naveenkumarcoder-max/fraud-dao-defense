@@ -1,27 +1,9 @@
-@'
-# Secrets and environment variables
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-secrets/
 
-# Python
+.env
+**/.env
 .venv/
 venv/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-
-# JavaScript
-node_modules/
-dist/
-coverage/
-
-# Editors and operating system
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-'@ | Set-Content -Encoding utf8 .gitignore
+backend/fraudshield.db
+backend/instance/
