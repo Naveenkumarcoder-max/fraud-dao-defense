@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f6ff">
+  <title>FraudShield | Intelligent Fraud Defense</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="#" class="brand">
+        <span class="brand-icon">✳</span>
+        <span>fraud<span class="brand-light">shield</span></span>
+      </a>
+
+      <div class="workspace">
+        <div class="workspace-avatar">FS</div>
+        <div>
+          <strong>Security Center</strong>
+          <small>Fraud Intelligence</small>
+        </div>
+        <span class="workspace-dots">•••</span>
+      </div>
+
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="navigation">
+        <a href="#overview" class="nav-link active" data-page="overview">
+          <span>◫</span> Overview
+        </a>
+        <a href="#transactions" class="nav-link" data-page="transactions">
+          <span>⇄</span> Transactions <b class="nav-count">8</b>
+        </a>
+        <a href="#identity" class="nav-link" data-page="identity">
+          <span>◎</span> DAO Identity
+        </a>
+        <a href="#alerts" class="nav-link" data-page="alerts">
+          <span>♧</span> Fraud Alerts <b class="nav-count alert-count">3</b>
+        </a>
+        <a href="#analytics" class="nav-link" data-page="analytics">
+          <span>▥</span> Analytics
+        </a>
+      </nav>
+
+      <div class="nav-label tools-label">MANAGEMENT</div>
+      <nav class="navigation">
+        <a href="#investigations" class="nav-link" data-page="investigations">
+          <span>⌕</span> Investigations
+        </a>
+        <a href="#settings" class="nav-link" data-page="settings">
+          <span>⚙</span> Settings
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="pro-card">
+          <div class="pro-spark">✦</div>
+          <strong>Stay one step ahead.</strong>
+          <p>Smarter insights. Safer transactions.</p>
+          <span class="pro-tag">INTELLIGENCE HUB ↗</span>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">AD</div>
+          <div class="profile-info">
+            <strong>Admin User</strong>
+            <small>Security Analyst</small>
+          </div>
+          <span class="profile-menu">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumbs">
+          <span>Workspace</span><span class="crumb-slash">/</span>
+          <strong id="breadcrumb-title">Overview</strong>
+        </div>
+        <div class="topbar-actions">
+          <span class="system-status"><i></i> System operational</span>
+          <button class="icon-button" id="notification-btn" aria-label="Notifications">♧<span class="notification-dot"></span></button>
+          <div class="top-avatar">AD</div>
+        </div>
+      </header>
+
+      <section class="page-content" id="overview">
+        <div class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR FRAUD INTELLIGENCE HUB</div>
+            <h1>Good evening, Admin <span class="wave">✦</span></h1>
+            <p class="subtitle">Here's what's happening across your security ecosystem.</p>
+          </div>
+          <div class="header-buttons">
+            <button class="btn btn-white" id="export-btn">↓ Export report</button>
+            <button class="btn btn-primary" id="analyze-btn">＋ Analyze transaction</button>
+          </div>
+        </div>
+
+        <div class="insight-banner">
+          <div class="insight-icon">✳</div>
+          <div class="insight-copy">
+            <strong>Your security pulse is looking good!</strong>
+            <p>Your demo dashboard is ready. Review flagged activity and test the fraud-risk analyzer.</p>
+          </div>
+          <span class="insight-pill"><i></i> MONITORING ACTIVE</span>
+          <span class="banner-decoration">✳</span>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <h2>Security at a glance</h2>
+            <p>Your financial ecosystem, one clear picture.</p>
+          </div>
+          <button class="date-filter" id="date-filter">◷ &nbsp; Last 7 days &nbsp;⌄</button>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card stat-purple">
+            <div class="stat-top"><span class="stat-icon">⇄</span><span class="stat-label">TRANSACTIONS</span><span class="stat-more">↗</span></div>
+            <div class="stat-value" id="total-transactions">12,486</div>
+            <div class="stat-bottom"><span class="trend trend-green">↗ 12.8%</span><span>vs. previous period</span></div>
+            <div class="stat-decoration decoration-purple">⇄</div>
+          </article>
+          <article class="stat-card stat-pink">
+            <div class="stat-top"><span class="stat-icon">⚑</span><span class="stat-label">FRAUD DETECTED</span><span class="stat-more">↗</span></div>
+            <div class="stat-value" id="fraud-detected">184</div>
+            <div class="stat-bottom"><span class="trend trend-red">↑ 4.2%</span><span>vs. previous period</span></div>
+            <div class="stat-decoration decoration-pink">⚑</div>
+          </article>
+          <article class="stat-card stat-orange">
+            <div class="stat-top"><span class="stat-icon">₹</span><span class="stat-label">VALUE PROTECTED</span><span class="stat-more">↗</span></div>
+            <div class="stat-value" id="value-protected">₹8.42L</div>
+            <div class="stat-bottom"><span class="trend trend-green">↗ 18.6%</span><span>estimated demo value</span></div>
+            <div class="stat-decoration decoration-orange">₹</div>
+          </article>
+          <article class="stat-card stat-green">
+            <div class="stat-top"><span class="stat-icon">◎</span><span class="stat-label">DAO VERIFIED</span><span class="stat-more">↗</span></div>
+            <div class="stat-value" id="dao-verified">96.8%</div>
+            <div class="stat-bottom"><span class="trend trend-green">↗ 2.1%</span><span>verification success</span></div>
+            <div class="stat-decoration decoration-green">◎</div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel chart-panel">
+            <div class="panel-heading">
+              <div><h3>Fraud activity overview</h3><p>Transaction patterns & flagged activity</p></div>
+              <div class="chart-legend"><span><i class="legend-purple"></i> Transactions</span><span><i class="legend-pink"></i> Flagged</span></div>
+            </div>
+            <div class="chart-summary"><strong>12,486</strong><span class="trend trend-green">↗ 12.8%</span><small>transaction volume</small></div>
+            <div class="chart-container"><canvas id="activity-chart" aria-label="Transaction activity chart"></canvas></div>
+            <div class="chart-foot"><span>◉ Demo analytics · Sample data</span><span>Updated just now</span></div>
+          </article>
+
+          <article class="panel risk-panel">
+            <div class="panel-heading">
+              <div><h3>Risk distribution</h3><p>Risk levels across monitored activity</p></div>
+              <button class="more-btn" aria-label="Risk chart options">•••</button>
+            </div>
+            <div class="donut-wrap">
+              <div class="donut-chart" id="risk-donut">
+                <div class="donut-center"><strong id="risk-total">12.4k</strong><span>EVENTS</span></div>
+              </div>
+            </div>
+            <div class="risk-legend">
+              <div><i class="risk-low"></i><span>Low risk</span><strong>72%</strong></div>
+              <div><i class="risk-medium"></i><span>Medium risk</span><strong>19%</strong></div>
+              <div><i class="risk-high"></i><span>High risk</span><strong>9%</strong></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="lower-grid">
+          <article class="panel transactions-panel" id="transactions">
+            <div class="panel-heading">
+              <div><h3>Recent transactions</h3><p>Keep an eye on suspicious movements.</p></div>
+              <button class="text-link" data-go="transactions">View all ↗</button>
+            </div>
+            <div class="table-scroll">
+              <table>
+                <thead><tr><th>TRANSACTION</th><th>AMOUNT</th><th>RISK SCORE</th><th>STATUS</th><th></th></tr></thead>
+                <tbody id="transaction-body"></tbody>
+              </table>
+            </div>
+            <div class="table-footer"><span id="transaction-count">Showing recent activity</span><button class="text-link" data-go="transactions">All transactions →</button></div>
+          </article>
+
+          <article class="panel alerts-panel" id="alerts">
+            <div class="panel-heading">
+              <div><h3>Security alerts <span class="alert-number" id="alert-number">3</span></h3><p>Activity that needs your attention.</p></div>
+              <button class="more-btn" aria-label="Alert options">•••</button>
+            </div>
+            <div class="alerts-list" id="alerts-list"></div>
+            <button class="all-alerts-btn" data-go="alerts">View all alerts <span>→</span></button>
+          </article>
+        </div>
+
+        <footer class="footer"><span>✳ fraudshield <span class="footer-muted">· Intelligent fraud defense</span></span><span>DEMO MODE · Sample data only</span></footer>
+      </section>
+
+      <section class="page-content secondary-page" id="secondary-page" hidden>
+        <div class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> FRAUD INTELLIGENCE HUB</div>
+            <h1 id="secondary-title">Transactions</h1>
+            <p class="subtitle" id="secondary-subtitle">Monitor activity and investigate risk signals.</p>
+          </div>
+          <button class="btn btn-primary" id="secondary-action">＋ New analysis</button>
+        </div>
+        <div class="panel secondary-panel" id="secondary-body"></div>
+        <footer class="footer"><span>✳ fraudshield <span class="footer-muted">· Intelligent fraud defense</span></span><span>DEMO MODE · Sample data only</span></footer>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="analysis-modal" hidden>
+    <section class="analysis-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <div><div class="eyebrow"><span class="eyebrow-dot"></span> RISK INTELLIGENCE</div><h2 id="modal-title">Analyze a transaction</h2><p>Enter transaction details to run a demo risk assessment.</p></div>
+        <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      </div>
+      <form id="analysis-form">
+        <div class="form-grid">
+          <label>Transaction ID<input name="transactionId" placeholder="TXN-10025" required maxlength="40"></label>
+          <label>Amount (INR)<input name="amount" type="number" min="1" max="100000000" step="0.01" placeholder="25000" required></label>
+          <label>Transaction type<select name="type"><option>UPI</option><option>Card</option><option>Bank Transfer</option><option>Wallet</option></select></label>
+          <label>Device status<select name="device"><option value="known">Known device</option><option value="new">New device</option></select></label>
+          <label>Failed attempts<input name="failedAttempts" type="number" min="0" max="100" value="0" required></label>
+          <label>Location<select name="location"><option value="usual">Usual location</option><option value="unusual">Unusual location</option></select></label>
+        </div>
+        <div class="form-note">ⓘ This demo uses illustrative rules, not a trained fraud model or a live banking system.</div>
+        <button class="btn btn-primary submit-analysis" type="submit">✳ Calculate risk score</button>
+      </form>
+      <div id="analysis-result" class="analysis-result" hidden aria-live="polite"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
